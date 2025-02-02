@@ -1,0 +1,62 @@
+/* Style Text */
+body {
+    background-image :url(ballons.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 200%;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 58px;
+}
+
+.button {
+    position: inherit;
+    background-color: gold;
+    border: none;
+    color: white;
+    font-size: 60px;
+    font-family: 'Gill Sans', serif;
+    padding: 20px;
+    width: 320px;
+    text-align: center;
+    transition-duration: 0.5s;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.button:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 160%;
+    padding-left: 120%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s;
+}
+
+.button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
